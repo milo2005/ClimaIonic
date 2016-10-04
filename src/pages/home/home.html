@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Clima Popayan
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div *ngIf="clima">
+    <h1>{{clima.des}}</h1>
+    <p><b>Temperatura: </b> {{clima.temp}}</p>
+    <p><b>Humedad: </b> {{clima.hum}}</p>
+    <p><b>Presion: </b> {{clima.pres}}</p>
+  </div>
+</ion-content>
